@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "jsxFactory": "VueTsxSupport",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "paths": {
+      "@/*": ["src/*"],
+      "@APP/*": ["./*"],
+      "@ASSETS/*": ["./public/assets/*"]
+    },
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx","node_modules/vue-tsx-support/enable-check.d.ts"],
+  "exclude": ["build"]
+}

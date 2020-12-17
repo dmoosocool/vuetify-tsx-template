@@ -1,0 +1,15 @@
+{
+  "presets": ["@babel/preset-typescript", "@vue/babel-preset-jsx", ["@babel/preset-env"]],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    // 首先编译装饰器语法
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    // 再编译 class 语法
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
